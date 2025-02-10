@@ -1,0 +1,188 @@
+/* استيراد خط جميل */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* تنسيق عام */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* حاوية الـ CV */
+.cv-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* القسم الأيسر (المعلومات الشخصية) */
+.left-section {
+    background: #2c3e50;
+    padding: 30px;
+    text-align: center;
+}
+
+.left-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+.left-section h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+.left-section hr {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+.left-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+a{
+    color: #FFD700;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    background-color: #2b5876;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+button{
+    background-color: #FFD700;
+    color: #1f1c2c;
+    height: 40px;
+    width: 160px;
+    border: none;
+    position: fixed;
+    border-radius: 19px;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bolder;
+    transform: scale(1.0);
+
+    bottom: 5%;
+    right: 87%;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.07);
+    transition: 0.8s ease-in;
+    transition: ease-out 0.8s;
+}
+.left-section ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-section ul li::before {
+    content: "✔️";
+    color: #1abc9c;
+}
+
+/* القسم الأيمن (المهارات والخبرات) */
+.right-section {
+    padding: 30px;
+}
+
+.right-section h2 {
+    font-size: 22px;
+    color: #1abc9c;
+    margin-bottom: 10px;
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-section ul li {
+    padding: 5px 0;
+}
+
+.experience {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.experience h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* الزر الخاص بالاتصال */
+.call-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .left-section {
+        padding: 20px;
+    }
+    
+    .right-section {
+        padding: 20px;
+    }
+
+    .call-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+}
